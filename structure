@@ -46,4 +46,7 @@ project-root/
 │   ├── main.tf
 │   ├── variables.tf
 │   └── outputs.tf
+└── functions/
+    └── auction_board/
+        └── main.go
 └── README.md
