@@ -1,52 +1,32 @@
 project-root/
 │
-├── services/
+├── cmd/
 │   ├── buyer-service/
-│   │   ├── main.go
-│   │   ├── Dockerfile
-│   │   └── ...
+│   │   └── main.go
 │   ├── supplier-service/
-│   │   ├── main.go
-│   │   ├── Dockerfile
-│   │   └── ...
-│   ├── admin-service/
-│   │   ├── main.go
-│   │   ├── Dockerfile
-│   │   └── ...
-│   └── ...
-│
-├── deployments/
-│   ├── kubernetes/
-│   │   ├── buyer-service/
-│   │   │   ├── deployment.yaml
-│   │   │   ├── service.yaml
-│   │   │   └── ...
-│   │   ├── supplier-service/
-│   │   │   ├── deployment.yaml
-│   │   │   ├── service.yaml
-│   │   │   └── ...
-│   │   ├── admin-service/
-│   │   │   ├── deployment.yaml
-│   │   │   ├── service.yaml
-│   │   │   └── ...
-│   │   └── ...
-│   ├── terraform/
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   └── ...
-│   └── ...
-│
+│   │   └── main.go
+│   └── admin-service/
+│       └── main.go
+├── internal/
+│   ├── handlers/
+│   │   ├── buyer_handler.go
+│   │   ├── supplier_handler.go
+│   │   └── admin_handler.go
+│   ├── models/
+│   │   ├── buyer.go
+│   │   ├── supplier.go
+│   │   └── admin.go
+│   ├── middleware/
+│   │   ├── auth_middleware.go
+│   │   └── logging_middleware.go
+├── pkg/
+│   ├── database/
+│   │   ├── db.go
+│   │   ├── buyer_db.go
+│   │   ├── supplier_db.go
+│   │   └── admin_db.go
 ├── config/
-│   ├── dev.yaml
-│   ├── prod.yaml
-│   └── ...
-│
-├── scripts/
-│   ├── deployment-scripts/
-│   │   ├── deploy.sh
-│   │   └── ...
-│   └── ...
-│
-├── README.md
-├── LICENSE
-└── ...
+│   ├── buyer_config.yaml
+│   ├── supplier_config.yaml
+│   └── admin_config.yaml
+└── README.md
