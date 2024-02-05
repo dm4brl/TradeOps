@@ -1,0 +1,52 @@
+project-root/
+│
+├── services/
+│   ├── buyer-service/
+│   │   ├── main.go
+│   │   ├── Dockerfile
+│   │   └── ...
+│   ├── supplier-service/
+│   │   ├── main.go
+│   │   ├── Dockerfile
+│   │   └── ...
+│   ├── admin-service/
+│   │   ├── main.go
+│   │   ├── Dockerfile
+│   │   └── ...
+│   └── ...
+│
+├── deployments/
+│   ├── kubernetes/
+│   │   ├── buyer-service/
+│   │   │   ├── deployment.yaml
+│   │   │   ├── service.yaml
+│   │   │   └── ...
+│   │   ├── supplier-service/
+│   │   │   ├── deployment.yaml
+│   │   │   ├── service.yaml
+│   │   │   └── ...
+│   │   ├── admin-service/
+│   │   │   ├── deployment.yaml
+│   │   │   ├── service.yaml
+│   │   │   └── ...
+│   │   └── ...
+│   ├── terraform/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── ...
+│   └── ...
+│
+├── config/
+│   ├── dev.yaml
+│   ├── prod.yaml
+│   └── ...
+│
+├── scripts/
+│   ├── deployment-scripts/
+│   │   ├── deploy.sh
+│   │   └── ...
+│   └── ...
+│
+├── README.md
+├── LICENSE
+└── ...
