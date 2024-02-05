@@ -49,4 +49,6 @@ project-root/
 └── functions/
     └── auction_board/
         └── main.go
+├── public/
+│   └── index.html
 └── README.md
