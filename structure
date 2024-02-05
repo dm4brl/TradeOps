@@ -2,11 +2,14 @@ project-root/
 │
 ├── cmd/
 │   ├── buyer-service/
-│   │   └── main.go
+│   │   ├── main.go
+│   │   └── Dockerfile
 │   ├── supplier-service/
-│   │   └── main.go
+│   │   ├── main.go
+│   │   └── Dockerfile
 │   └── admin-service/
-│       └── main.go
+│       ├── main.go
+│       └── Dockerfile
 ├── internal/
 │   ├── handlers/
 │   │   ├── buyer_handler.go
@@ -29,4 +32,18 @@ project-root/
 │   ├── buyer_config.yaml
 │   ├── supplier_config.yaml
 │   └── admin_config.yaml
+├── kubernetes/
+│   ├── buyer-service/
+│   │   ├── deployment.yaml
+│   │   └── service.yaml
+│   ├── supplier-service/
+│   │   ├── deployment.yaml
+│   │   └── service.yaml
+│   └── admin-service/
+│       ├── deployment.yaml
+│       └── service.yaml
+├── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
 └── README.md
